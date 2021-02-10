@@ -408,7 +408,8 @@
                         <use href="./images/sprite.svg#icon-phone-black-18dp-1" width="18" height="18"></use>
                     </svg>
                     <input name="user-name" type="text" class="contact-form-input" required >
-                </div><label for="name" class="data">Почта</label>
+                </div>
+                    <label for="name" class="data">Почта</label>
                 <div class="form-field">
                     <svg class="contact-modal-icon">
                         <use href="./images/sprite.svg#icon-email-black-18dp-1" width="18" height="18"></use>
@@ -421,14 +422,14 @@
                   </label>
                 </div>
                 <div class="form-agreement">
-                    <label for="agreement" class="agreement">
-                        <input class="agreement" type="checkbox" name="agree" value="agree" />Соглашаюсь с рассылкой и принимаю 
+                    <label for="agreement" class="checkbox-label">
+                        <input class="checkbox" type="checkbox" name="agree" id="agreement" checked required/>
+                        <span class="checkbox-icon"></span>
+                        Соглашаюсь с рассылкой и принимаю 
+                        <a href="#" class="checkbox-link">Условия договора</a>
                     </label>
-                    <a href="#" class="agreement-link">Условия договора</a>
+                 </div>
                     <button type="submit" class="contact-form-btn">Отправить</button>
-                </div>
-                    
-              
             </form>
         </div>
     </div>
