@@ -819,13 +819,18 @@ margin-bottom: 12px;
   position: relative;
   margin-top: 4px;
   width: 100%;
-  
 }
-.form-field:focus-within > .contact-modal-icon{
-  border-color: var(--hover-color);
+
+.form-field:focus-within > .contact-modal-icon,
+.contact-form-input, .contact-form-message{
   fill: var(--hover-color);
-  outline: transparent;
+  border-color: var(--hover-color)
 }
+
+.form-agreement:focus{
+  border-color: var(--hover-color);
+}
+
 
 .contact-modal-icon{
   position: absolute;
@@ -837,12 +842,17 @@ margin-bottom: 12px;
   transform: translateY(-50%);
 }
 .data{
+
+height: 100%;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.166;
 letter-spacing: 0.01em;
 color: #757575;
-margin-top: 10px;
+
+}
+.data:not(:first-child){
+  margin-top: 10px;
 }
 .contact-form-message{
 resize: none;
