@@ -584,6 +584,9 @@ border-radius: 4px;
 padding: 16px 15px;
 background-color: transparent;
 }
+.mail-fraim{
+  color: rgba(255, 255, 255, 0.664);
+}
 
 .mail:not(:last-child){
 margin-right: 12px;
