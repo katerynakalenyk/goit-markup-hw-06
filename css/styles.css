@@ -800,11 +800,6 @@ border-radius: 4px;
 padding: 12px 42px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field:hover,
-.form-field:focus{
-  outline: transparent;
-  border-color: var(--hover-color);
-}
 
 .contact-form-message{
   padding: 12px 16px;
@@ -825,10 +820,11 @@ margin-bottom: 12px;
   
 }
 .form-field:focus-within > .contact-modal-icon{
-  
+  border-color: var(--hover-color);
   fill: var(--hover-color);
-  
+  outline: transparent;
 }
+
 .contact-modal-icon{
   position: absolute;
   width: 18px;
@@ -865,7 +861,8 @@ font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: #757575;
-border: transparent;
+margin-bottom: 30px;
+
 
 }
 .checkbox-icon{
@@ -899,27 +896,9 @@ margin-left: 4px;
 .contact-form-btn{
 display: flex;
 justify-content: center;
-align-items: center;
-min-width: 200px;
-height: 50px;
-border: none;
-background: var(--hover-color);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.875;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: #ffffff;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-cursor: pointer;
-margin-top: 30px;
-      
-transition-property: background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+  
 
 
 .is-hidden{
