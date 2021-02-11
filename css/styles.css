@@ -821,10 +821,14 @@ margin-bottom: 12px;
   width: 100%;
 }
 
-.form-field:focus-within > .contact-modal-icon,
-.contact-form-input, .contact-form-message{
+.form-field:focus-within > .contact-modal-icon{
   fill: var(--hover-color);
-  border-color: var(--hover-color)
+}
+
+.form-field .contact-form-input:focus, 
+.contact-form-message:focus { 
+  border-color: var(--hover-color); 
+  outline: transparent; 
 }
 
 .form-agreement:focus{
@@ -842,7 +846,6 @@ margin-bottom: 12px;
   transform: translateY(-50%);
 }
 .data{
-
 height: 100%;
 font-weight: 400;
 font-size: 12px;

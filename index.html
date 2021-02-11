@@ -395,34 +395,34 @@
             </button>
             <h2 class="your-data">Оставьте свои данные, мы вам перезвоним</h2>
             <form action="#" class="contact-form">
-                <label for="name" class="data">Имя</label>
+                <label for="name"  class="data" >Имя</label>
                 <div class="form-field">
                     <svg class="contact-modal-icon">
                         <use href="./images/sprite.svg#icon-person-black-18dp-1" width="18" height="18"></use>
                     </svg>
-                    <input name="user-name" type="text" class="contact-form-input" required >
+                    <input name="user-name" id="name" type="text" class="contact-form-input" required >
                 </div>
-                <label for="name" class="data">Телефон</label>
+                <label for="tel" class="data" >Телефон</label>
                 <div class="form-field">
                     <svg class="contact-modal-icon">
                         <use href="./images/sprite.svg#icon-phone-black-18dp-1" width="18" height="18"></use>
                     </svg>
-                    <input name="user-name" type="tel" class="contact-form-input" required >
+                    <input name="user-name" id="tel" type="tel" class="contact-form-input" required >
                 </div>
-                    <label for="name" class="data">Почта</label>
+                    <label for="email"  class="data" >Почта</label>
                 <div class="form-field">
                     <svg class="contact-modal-icon">
                         <use href="./images/sprite.svg#icon-email-black-18dp-1" width="18" height="18"></use>
                     </svg>
-                    <input name="user-name" type="email" class="contact-form-input" required >
+                    <input name="user-name" id="email" type="email" class="contact-form-input" required >
                 </div>
                 <div class="form-field">
-                  <label class="data">Комментарий
-                    <textarea name="comment" id="" class="contact-form-message" placeholder="Введите текст"></textarea>
+                  <label for="comment" class="data">Комментарий
+                    <textarea name="agree" id="comment" class="contact-form-message" placeholder="Введите текст"></textarea>
                   </label>
                 </div>
                 <div class="form-agreement">
-                    <label for="agreement" class="checkbox-label">
+                    <label for="agreement"  class="checkbox-label">
                         <input class="checkbox" type="checkbox" name="agree" id="agreement" checked required/>
                         <span class="checkbox-icon"></span>
                         Соглашаюсь с рассылкой и принимаю 
