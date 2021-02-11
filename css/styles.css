@@ -588,12 +588,15 @@ background-color: transparent;
 .mail:not(:last-child){
 margin-right: 12px;
 }
-
+.contact-form{
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
 .submit-btn{
 display: inline-flex;
 justify-content: center;
 align-items: center;
-
 min-width: 200px;
 height: 50px;
 border: none;
@@ -601,7 +604,6 @@ background: var(--hover-color);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.875;
-align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: #ffffff;
@@ -791,7 +793,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
 
 .contact-form-input{
 display: block; 
-margin-bottom: 10px;
 width: 100%;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -817,6 +818,7 @@ margin-bottom: 12px;
 .form-field{
   position: relative;
   margin-top: 4px;
+  width: 100%;
   
 }
 .form-field:focus-within > .contact-modal-icon{
@@ -853,17 +855,12 @@ margin-top: 4px;
 }
 
 .checkbox-label{
-display: flex;
-justify-content: center;
-align-items: center;
+
 font-weight:400;
 font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: #757575;
-margin-bottom: 30px;
-
-
 }
 .checkbox-icon{
   display: inline-block;
@@ -891,6 +888,9 @@ line-height: 1.714;
 letter-spacing: 0.03em;
 color: var(--hover-color);
 margin-left: 4px;
+}
+.form-agreement{
+  margin-bottom: 30px;
 }
 
 .contact-form-btn{
